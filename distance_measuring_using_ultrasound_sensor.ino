@@ -28,7 +28,7 @@ void loop()
 
   duration = pulseIn(echopin ,HIGH);
   distance =duration*0.034/2;
-if (distance >=50)
+if (distance <=50)
 {
   digitalWrite(led, HIGH);
   delay(500);
